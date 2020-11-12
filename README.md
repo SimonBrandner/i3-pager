@@ -23,10 +23,13 @@ sudo make -C build install
 
 ## Features
 
++ Multiple styles
 + Shows current mode
 + Shows workspaces
-  + Allows filtering by the current screen
   + Show workspace icons using `Font Awesome`
+  + Filtering by the current screen
+  + Ordering by screen
+  + Coloring by screen
 
 ## Configuration
 
