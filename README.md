@@ -14,7 +14,7 @@ A plasmoid for integrating i3 with KDE Plasma.
 ```bash
 git clone https://github.com/duvholt/i3-pager.git --recurse-submodules
 cd i3-pager
-cmake -DCMAKE_INSTALL_PREFIX=$(kf5-config --prefix)  -B build .
+cmake -DCMAKE_INSTALL_PREFIX=$(kf5-config --prefix) -B build .
 make -C build
 sudo make -C build install
 ```
