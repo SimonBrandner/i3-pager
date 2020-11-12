@@ -6,8 +6,9 @@ A plasmoid for integrating i3 with KDE Plasma.
 
 ## Installation
 
-+ Make sure `extra-cmake-modules` is installed.
-
++ Make sure i3wm is installed.
++ Install dependencies.
+  + Debian: `libkf5plasma-dev extra-cmake-modules qtbase5-dev qtdeclarative5-dev libsigc++-2.0-dev libjsoncpp-dev`
 + Build and install i3-pager:
 
 ```bash
