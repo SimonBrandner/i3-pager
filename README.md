@@ -6,14 +6,15 @@ A plasmoid for integrating i3 with KDE Plasma.
 
 ## Installation
 
-+ Make sure `extra-cmake-modules` is installed.
-
++ Make sure i3wm is installed.
++ Install dependencies.
+  + Debian: `libkf5plasma-dev extra-cmake-modules qtbase5-dev qtdeclarative5-dev libsigc++-2.0-dev libjsoncpp-dev`
 + Build and install i3-pager:
 
 ```bash
 git clone https://github.com/duvholt/i3-pager.git --recurse-submodules
 cd i3-pager
-cmake -DCMAKE_INSTALL_PREFIX=$(kf5-config --prefix)  -B build .
+cmake -DCMAKE_INSTALL_PREFIX=$(kf5-config --prefix) -B build .
 make -C build
 sudo make -C build install
 ```
@@ -22,10 +23,13 @@ sudo make -C build install
 
 ## Features
 
++ Multiple styles
 + Shows current mode
 + Shows workspaces
-  + Allows filtering by the current screen
   + Show workspace icons using `Font Awesome`
+  + Filtering by the current screen
+  + Ordering by screen
+  + Coloring by screen
 
 ## Configuration
 
